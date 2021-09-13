@@ -10,6 +10,10 @@ import Foundation
 
 
 let usage = """
+Compares two .dat files from the Backblaze.pzpkg/bzdata/bzfilelists directory, ignoring lines starting with '#'.
+Useful for checking what happened between two lists from the same drive at different points in time.
+Missing, new and changed files will be written to new lists (in the same format as the .dat files) in the output directory.
+
 Usage:
     \(ProgramName) [option ...] <old file> <new file> <output directory>
 
